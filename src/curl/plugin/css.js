@@ -512,7 +512,7 @@
 
 	/***** finally! the actual plugin *****/
 
-	define(/*=='curl/plugin/css',==*/ {
+  window['vtex']['define'](/*=='curl/plugin/css',==*/ {
 
 		'normalize': function (resourceId, normalize) {
 			var resources, normalized;

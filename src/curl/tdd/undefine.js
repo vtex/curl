@@ -8,7 +8,7 @@
  *
  */
 
-define(['curl/_privileged', 'require'], function (priv, require) {
+window['vtex']['define'](['curl/_privileged', 'require'], function (priv, require) {
 	var cache, cleanupScript, loadScript;
 
 	cache = priv['cache'];

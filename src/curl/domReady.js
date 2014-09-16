@@ -118,8 +118,7 @@
 			pollerHandle = setTimeout(poller, pollerTime);
 		}
 	}
-
-	define(/*=='curl/domReady',==*/ function () {
+  window['vtex']['define'](/*=='curl/domReady',==*/ function () {
 
 		// this is simply a callback, but make it look like a promise
 		function domReady (cb) {

@@ -8,7 +8,7 @@
  *
  */
 
-define(['curl', 'curl/_privileged', './undefine'], function (curl, priv, undefine) {
+window['vtex']['define'](['curl', 'curl/_privileged', './undefine'], function (curl, priv, undefine) {
 "use strict";
 
 	var Promise, runQueue, undef;

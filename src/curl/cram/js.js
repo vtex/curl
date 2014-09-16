@@ -3,7 +3,7 @@
 /**
  * curl js! cram plugin
  */
-define(function (require) {
+window['vtex']['define'](function (require) {
 
 	var _define = require('./_define');
 

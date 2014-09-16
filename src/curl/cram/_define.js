@@ -3,6 +3,7 @@
 /**
  * curl _define plugin helper
  */
+define = vtex['define'];
 define(function (require) {
 
 	var _stringify = require('./_stringify');

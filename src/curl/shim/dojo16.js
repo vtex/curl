@@ -21,7 +21,7 @@
  *
  */
 var require;
-define(/*=='curl/shim/dojo16',==*/ ['curl/_privileged', 'curl/domReady'], function (priv, domReady) {
+window['vtex']['define'](/*=='curl/shim/dojo16',==*/ ['curl/_privileged', 'curl/domReady'], function (priv, domReady) {
 "use strict";
 
 	var _curl = priv['_curl'],

@@ -14,7 +14,7 @@ define['amd'].ssjs = true;
 if (typeof module !== 'undefined') module.exports = curl;
 var require, load;
 (function (freeRequire, globalLoad) {
-define(/*=='curl/shim/ssjs',==*/ ['curl/_privileged', './_fetchText'], function (priv, _fetchText) {
+window['vtex']['define'](/*=='curl/shim/ssjs',==*/ ['curl/_privileged', './_fetchText'], function (priv, _fetchText) {
 "use strict";
 
 	var cache, config,

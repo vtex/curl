@@ -3,15 +3,15 @@
 /**
  * curl css! plugin build-time module
  */
-define(['./jsEncode'], function (jsEncode) {
+window['vtex']['define'](['./jsEncode'], function (jsEncode) {
 	"use strict";
 
 	var templateWithRuntimeModule, templateWithRuntimePlugin, templateRx,
 		nonRelUrlRe, findUrlRx, commaSepRx;
 
-	templateWithRuntimeModule = 'define("${absId}", ["${runtime}", "require"], function (injector, require) { var text = "${text}"; if (${translateUrls}) text = injector.translateUrls(text, require.toUrl("")); return injector(text); });\n';
-	templateWithRuntimePlugin = 'define("${resourceId}", ["${runtime}", "require"], function (injector, require) { var text = "${text}"; if (${translateUrls}) text = injector.translateUrls(text, require.toUrl("")); return text; });\n' +
-		'define("${absId}", ["${runtime}!${resourceId}"], function (sheet) { return sheet; });\n';
+	templateWithRuntimeModule = 'var define = window.vtex.define;define("${absId}", ["${runtime}", "require"], function (injector, require) { var text = "${text}"; if (${translateUrls}) text = injector.translateUrls(text, require.toUrl("")); return injector(text); });\n';
+	templateWithRuntimePlugin = 'var define = window.vtex.define;define("${resourceId}", ["${runtime}", "require"], function (injector, require) { var text = "${text}"; if (${translateUrls}) text = injector.translateUrls(text, require.toUrl("")); return text; });\n' +
+		'var define = window.vtex.define;define("${absId}", ["${runtime}!${resourceId}"], function (sheet) { return sheet; });\n';
 	templateRx = /\$\{([^}]+)\}/g;
 	commaSepRx = /\s*,\s*/g;
 

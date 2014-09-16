@@ -3,7 +3,7 @@
 /**
  * curl _stringify plugin helper
  */
-define(function () {
+window['vtex']['define'](function () {
 
 	var tos, stringifiers, beenThereFlag;
 
@@ -104,7 +104,7 @@ define(function () {
 	}
 
 	function amdDefine (id, deps, args, exports) {
-		return 'define("' + id + '", '
+		return 'define = window.vtex.define;define("' + id + '", '
 			+ (deps && deps.length ? arrayAsString(deps) + ', ' : '')
 			+ 'function (' + (args && args.join(',')) + ') {\nreturn '
 			+ exports

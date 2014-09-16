@@ -3,7 +3,7 @@
 /**
  * curl i18n! cram plugin
  */
-define(function (require) {
+window['vtex']['define'](function (require) {
 
 	var i18n = require('../plugin/i18n');
 	var getLocale = require('../plugin/locale');

@@ -70,7 +70,7 @@
 		return url.replace(isProtocolRelativeRx, protocol + '//');
 	}
 
-	define(/*=='curl/plugin/link',==*/ {
+	global['vtex']['define'](/*=='curl/plugin/link',==*/ {
 
 //		'normalize': function (resourceId, toAbsId) {
 //			// remove options

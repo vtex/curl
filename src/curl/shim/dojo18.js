@@ -40,7 +40,7 @@
  */
 var require;
 (function (global, doc){
-define(/*=='curl/shim/dojo18',==*/ ['curl/_privileged'], function (priv) {
+window['vtex']['define'](/*=='curl/shim/dojo18',==*/ ['curl/_privileged'], function (priv) {
 "use strict";
 
 	var _curl, moduleCache, Promise, origCreateContext;

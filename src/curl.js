@@ -13,7 +13,7 @@
 (function (global) {
 //"use strict"; don't restore this until the config routine is refactored
 	var
-		version = '0.8.10',
+		version = '0.8.10-vtex.1',
 		curlName = 'curl',
 		defineName = 'define',
 		bootScriptAttr = 'data-curl-run',
@@ -21,7 +21,7 @@
 		userCfg,
 		prevCurl,
 		prevDefine,
-		doc = global.document,
+		doc = window.document,
 		head = doc && (doc['head'] || doc.getElementsByTagName('head')[0]),
 		// to keep IE from crying, we need to put scripts before any
 		// <base> elements, but after any <meta>. this should do it:
@@ -34,7 +34,7 @@
 		// event to tell us exactly which one.
 		activeScripts = {},
 		// readyStates for IE6-9
-		readyStates = 'addEventListener' in global ? {} : { 'loaded': 1, 'complete': 1 },
+		readyStates = 'addEventListener' in window ? {} : { 'loaded': 1, 'complete': 1 },
 		// these are always handy :)
 		cleanPrototype = {},
 		toString = cleanPrototype.toString,
@@ -697,7 +697,7 @@
 
 			// initial script processing
 			function process (ev) {
-				ev = ev || global.event;
+				ev = ev || window.event;
 				// detect when it's done loading
 				// ev.type == 'load' is for all browsers except IE6-9
 				// IE6-9 need to use onreadystatechange and look for
@@ -1119,7 +1119,7 @@
 			// a UA sniff, thankfully.
 			// learned this trick from James Burke's RequireJS
 			var def;
-			if (!isType(global.opera, 'Opera')) {
+			if (!isType(window.opera, 'Opera')) {
 				for (var d in activeScripts) {
 					if (activeScripts[d].readyState == 'interactive') {
 						def = d;
@@ -1364,4 +1364,4 @@
 		'Promise': Promise
 	};
 
-}(this.window || (typeof global != 'undefined' && global) || this));
+}(window['vtex'] || (window['vtex'] = {})));

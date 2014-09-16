@@ -7,7 +7,7 @@
  */
 
 (function (globalEval) {
-define(/*=='curl/plugin/json',==*/ ['./_fetchText'], function (fetchText) {
+window['vtex']['define'](/*=='curl/plugin/json',==*/ ['./_fetchText'], function (fetchText) {
 
 	var hasJsonParse, missingJsonMsg;
 

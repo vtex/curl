@@ -1,4 +1,4 @@
-define(/*=='curl/plugin/_fetchText',==*/ [], function () {
+window['vtex']['define'](/*=='curl/plugin/_fetchText',==*/ [], function () {
 
 	var xhr, progIds;
 

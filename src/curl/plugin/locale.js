@@ -14,7 +14,7 @@
  * i18n! plugin.  Just sayin.
  *
  */
-define(/*=='curl/plugin/locale',==*/ function () {
+window['vtex']['define'](/*=='curl/plugin/locale',==*/ function () {
 
 	var appendLocaleRx;
 

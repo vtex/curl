@@ -84,7 +84,7 @@
  * });
  */
 (function (global, doc, testGlobalVar) {
-define(/*=='curl/loader/legacy',==*/ ['curl/_privileged'], function (priv) {
+window['vtex']['define'](/*=='curl/loader/legacy',==*/ ['curl/_privileged'], function (priv) {
 "use strict";
 	var hasAsyncFalse, loadScript, dontAddExtRx;
 

@@ -12,7 +12,7 @@
  *
  */
 
-define(/*=='curl/plugin/text',==*/ ['./_fetchText'], function (fetchText) {
+window['vtex']['define'](/*=='curl/plugin/text',==*/ ['./_fetchText'], function (fetchText) {
 
 	return {
 

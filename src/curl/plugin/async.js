@@ -37,7 +37,7 @@
 	});
 
 */
-define(/*=='curl/plugin/async',==*/ function () {
+window['vtex']['define'](/*=='curl/plugin/async',==*/ function () {
 
 	return {
 
