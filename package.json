@@ -1,8 +1,8 @@
 {
-	"name": "curl-amd",
+	"name": "vtex-curl-amd",
 	"version": "0.8.10",
-	"description": "curl.js is small, fast, extensible module loader that handles AMD, CommonJS Modules/1.1, CSS, HTML/text, and legacy scripts.",
-	"keywords": ["curl", "cujo", "amd", "loader", "module", "commonjs", "css", "html", "json"],
+	"description": "VTEX namespaced and forked version of curl.js",
+	"keywords": ["curl", "cujo", "amd", "loader", "module", "commonjs", "css", "html", "json", "vtex"],
 	"licenses": [
 		{
 			"type": "MIT",
@@ -11,26 +11,15 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/cujojs/curl"
+		"url": "https://github.com/vtex/curl"
 	},
-	"bugs": "https://github.com/cujojs/curl/issues",
+	"bugs": "https://github.com/vtex/curl/issues",
 	"maintainers": [
 		{
-			"name": "John Hann",
-			"web": "http://unscriptable.com"
+			"name": "Breno Calazans"
 		}
 	],
-	"contributors": [
-		{
-			"name": "John Hann",
-			"web": "http://unscriptable.com"
-		},
-		{
-			"name": "Brian Cavalier",
-			"web": "http://hovercraftstudios.com"
-		}
-	],
-	"main": "./dist/curl-for-ssjs/curl.js",
+	"main": "./dist/curl/curl.js",
 	"directories": {
 		"test": "test"
 	},
