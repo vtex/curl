@@ -2,7 +2,7 @@
 	"name": "vtex-curl",
 	"moduleType": [ "amd", "node" ],
 	"main": "./dist/curl/curl.js",
-	"version": "0.8.10",
+	"version": "0.8.10-vtex.1",
 	"description": "VTEX namespaced and forked version of curl.js",
 	"ignore": ["bin", "docs", "test"]
 }
