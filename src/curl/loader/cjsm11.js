@@ -44,7 +44,7 @@
 
 	function wrapSource (source, resourceId, fullUrl) {
 		var sourceUrl = fullUrl ? '////# sourceURL=' + fullUrl.replace(/\s/g, '%20') + '' : '';
-		return "define('" + resourceId + "'," +
+		return "define = window.vtex.define;define('" + resourceId + "'," +
 			"['require','exports','module'],function(require,exports,module,define){" +
 			source + "\n});\n" + sourceUrl + "\n";
 	}

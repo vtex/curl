@@ -11,7 +11,7 @@ define(function (require) {
 	return _define;
 
 	function _define (id, deps, args, body, exports) {
-		return 'define("' + id + '", '
+		return 'define = window.vtex.define;define("' + id + '", '
 			+ (deps && deps.length ? _stringify.array(deps) + ', ' : '')
 			+ 'function (' + (args && args.join(',')) + ') {'
 			+ (body ? '\n' + body : '')
