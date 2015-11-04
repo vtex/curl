@@ -90,7 +90,7 @@ window['vtex']['define'](/*=='curl/plugin/js',==*/ ['curl/_privileged'], functio
 		}
 		if (failure && def.exports) setTimeout(poller, 10);
 
-		el = priv['core'].loadScript(def, process, fail);
+		el = priv['core']['loadScript'](def, process, fail);
 
 	}
 

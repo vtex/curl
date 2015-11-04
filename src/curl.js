@@ -1364,4 +1364,8 @@
 		'Promise': Promise
 	};
 
+	// expose function for js plugin to work
+	// (this solves the issue mentioned in the comment above)
+	core['loadScript'] = core.loadScript;
+
 }(window['vtex'] || (window['vtex'] = {})));
