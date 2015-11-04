@@ -29,7 +29,7 @@
  *
  */
 (function (global, doc, testGlobalVar) {
-window['vtex']['define'](/*=='curl/plugin/js',==*/ ['curl/_privileged'], function (priv) {
+window['vtex']['define'](['curl/_privileged'], function (priv) {
 "use strict";
 	var cache = {},
 		queue = [],

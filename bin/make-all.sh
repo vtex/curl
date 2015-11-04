@@ -7,4 +7,4 @@
 ./make.sh ../dist/curl/plugin/link.js ../src/curl/plugin/link.js
 
 # Just copy js to dist
-./make.sh --NONE ../dist/curl/plugin/js.js ../src/curl/plugin/js.js
+./make.sh ../dist/curl/plugin/js.js ../src/curl/plugin/js.js
