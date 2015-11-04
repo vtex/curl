@@ -1,6 +1,6 @@
 {
 	"name": "vtex-curl-amd",
-	"version": "0.8.10-vtex.3",
+	"version": "0.8.10-vtex.4",
 	"description": "VTEX namespaced and forked version of curl.js",
 	"keywords": ["curl", "cujo", "amd", "loader", "module", "commonjs", "css", "html", "json", "vtex"],
 	"licenses": [
